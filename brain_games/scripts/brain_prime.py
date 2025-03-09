@@ -1,5 +1,6 @@
 from brain_games.cli import welcome_user
 from random import randint
+import math
 
 
 def brain_prime():
@@ -9,8 +10,15 @@ def brain_prime():
     for attems in range(3):
         number = randint(0, 100)
         print(f'Quastion: {number}')
-        prime_numbers = [1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,61,67,71,73,83,87,89,91,97]
-        if number in prime_numbers:
+
+        def is_prime(number):
+            if number <= 1:
+                return False
+            for i in range(2, int(number ** 0.5) + 1):
+                if number % i == 0:
+                    return False
+            return True
+        if is_prime(number) == True:
             right_answer = 'yes'
         else:
             right_answer = 'no'
