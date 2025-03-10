@@ -9,7 +9,6 @@ def brain_gcd():
     for attems in range(3):
         first_num = randint(0, 100)
         second_num = randint(0, 100)
-        list_gcd = []
         print(f'Quastion: {first_num} {second_num}')
         while first_num != 0 and second_num != 0:
             if first_num > second_num:
