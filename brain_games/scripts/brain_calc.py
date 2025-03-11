@@ -12,7 +12,7 @@ def calculator():
         first_num = randint(0, 100)
         second_num = randint(0, 100)
         random_operator = choice(operators)
-        print(f'Quastion: {first_num} {random_operator} {second_num} ')
+        print(f'Question: {first_num} {random_operator} {second_num} ')
         if random_operator == '+':
             right_answer = first_num + second_num
             your_answer = int(input('Your answer: '))

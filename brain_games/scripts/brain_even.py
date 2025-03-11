@@ -8,7 +8,7 @@ def game_even_odd():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for attems in range(3):
         number = randint(0, 100)
-        print('Quastion: ',number)
+        print('Question: ',number)
         if number % 2 == 0:
             right_answer = 'yes'
             your_answer = str(input('Your answer: '))

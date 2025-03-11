@@ -18,7 +18,7 @@ def brain_progression():
         right_answer = quastion_elem
         question_elem_index = result.index(quastion_elem)  # метод списков .index() позволяет найти индекс элемента
         result[question_elem_index] = '..'
-        print(f'Quastion: {result}')
+        print(f'Question: {result}')
         your_answer = int(input('Your answer: '))
         if right_answer == your_answer:
             counts += 1
