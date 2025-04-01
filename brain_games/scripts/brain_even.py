@@ -30,7 +30,7 @@ def game_even_odd():
                 print(f"Let's try again, {name} !")
 
     if counts == 3:
-        print(f'Congratulations, {name} !')
+        print(f'Congratulations, {name}!')
     else:
         print('Try again')
 
