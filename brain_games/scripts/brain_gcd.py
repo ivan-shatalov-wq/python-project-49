@@ -22,7 +22,7 @@ def brain_gcd():
             print('Correct!')
         else:
             print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
-            print('Try again')
+            print(f"Let's try again, {name}!")
             break
     if counts == 3:
         print(f'Congratulations, {name}!')
