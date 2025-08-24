@@ -33,6 +33,7 @@ def calculator():
             else:
                 print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
                 print('Try again')
+                break
 
 
         elif random_operator == '-':
@@ -44,6 +45,7 @@ def calculator():
             else:
                 print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
                 print('Try again')
+                break
 
     if counts == 3:
         print(f'Congratulations, {name}!')
