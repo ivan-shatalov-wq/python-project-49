@@ -16,17 +16,17 @@ def game_even_odd():
                 counts += 1
                 print('Correct')
             else:
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
                 print(f"Let's try again, {name}!")
 
-        elif number != 0:
+        else:
             right_answer = 'no'
             your_answer = str(input('Your answer: '))
             if your_answer == right_answer:
                 counts += 1
                 print('Correct')
             else:
-                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
                 print(f"Let's try again, {name}!")
 
     if counts == 3:
