@@ -46,7 +46,7 @@ def calculator():
                 print('Try again')
 
     if counts == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
     else:
         print('Try again')
 
