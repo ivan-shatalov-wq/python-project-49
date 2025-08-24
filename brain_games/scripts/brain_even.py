@@ -18,6 +18,7 @@ def game_even_odd():
             else:
                 print("'no' is wrong answer ;(. Correct answer was 'yes'.")
                 print(f"Let's try again, {name}!")
+                break
 
         else:
             right_answer = 'no'
@@ -28,6 +29,7 @@ def game_even_odd():
             else:
                 print("'yes' is wrong answer ;(. Correct answer was 'no'.")
                 print(f"Let's try again, {name}!")
+                break
 
     if counts == 3:
         print(f'Congratulations, {name}!')
