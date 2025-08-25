@@ -18,18 +18,18 @@ def brain_progression():
         right_answer = quastion_elem
         question_elem_index = result.index(quastion_elem)  # метод списков .index() позволяет найти индекс элемента
         result[question_elem_index] = '..'
-        print(f'Question: {result}')
+        result_str = ' '.join([str(x) for x in result])
+        print(f'Question: {result_str}')
         your_answer = int(input('Your answer: '))
-        if right_answer == your_answer:
+        if int(right_answer) == int(your_answer):
             counts += 1
             print('Correct!')
         else:
             print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
-            print('Try again')
+            print(f"Let's try again, {name}!")
+            break
     if counts == 3:
-        print(f'Congratulations, {name}')
-    else:
-        print('Try again')
+        print(f'Congratulations, {name}!')
 
 
 
