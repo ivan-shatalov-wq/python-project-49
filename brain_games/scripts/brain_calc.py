@@ -1,6 +1,6 @@
-from random import randint
+from random import choice, randint
+
 from brain_games.cli import welcome_user
-from random import choice
 
 
 def calculator():
@@ -20,10 +20,10 @@ def calculator():
                 counts += 1
                 print('Correct!')
             else:
-                print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
+                print(f"{your_answer} is wrong answer ;(. "
+                      f"Correct answer was {right_answer}.")
                 print(f"Let's try again, {name}!")
                 break
-
 
         elif random_operator == '*':
             right_answer = first_num * second_num
@@ -32,10 +32,10 @@ def calculator():
                 counts += 1
                 print('Correct!')
             else:
-                print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
+                print(f"{your_answer} is wrong answer ;(. "
+                      f"Correct answer was {right_answer}.")
                 print(f"Let's try again, {name}!")
                 break
-
 
         elif random_operator == '-':
             right_answer = first_num - second_num
@@ -44,13 +44,13 @@ def calculator():
                 counts += 1
                 print('Correct!')
             else:
-                print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
+                print(f"{your_answer} is wrong answer ;(. "
+                      f"Correct answer was {right_answer}.")
                 print(f"Let's try again, {name}!")
                 break
 
     if counts == 3:
         print(f'Congratulations, {name}!')
-
 
 
 def main():

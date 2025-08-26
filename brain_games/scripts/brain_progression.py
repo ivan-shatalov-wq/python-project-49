@@ -1,6 +1,6 @@
-from random import randint
+from random import choice, randint
+
 from brain_games.cli import welcome_user
-from random import choice
 
 
 def brain_progression():
@@ -9,14 +9,14 @@ def brain_progression():
     print('What number is missing in the progression?')
     for attems in range(3):
         result = []
-        num = randint(0,100)
-        step = randint(1,6)
+        num = randint(0, 100)
+        step = randint(1, 6)
         for elem in range(10):
             num += step
             result.append(num)
         quastion_elem = choice(result)
         right_answer = quastion_elem
-        question_elem_index = result.index(quastion_elem)  # метод списков .index() позволяет найти индекс элемента
+        question_elem_index = result.index(quastion_elem)
         result[question_elem_index] = '..'
         result_str = ' '.join([str(x) for x in result])
         print(f'Question: {result_str}')
@@ -25,12 +25,12 @@ def brain_progression():
             counts += 1
             print('Correct!')
         else:
-            print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
+            print(f"{your_answer} is wrong answer ;(. "
+                  f"Correct answer was {right_answer}.")
             print(f"Let's try again, {name}!")
             break
     if counts == 3:
         print(f'Congratulations, {name}!')
-
 
 
 def main():

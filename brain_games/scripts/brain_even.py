@@ -1,4 +1,5 @@
 from random import randint
+
 from brain_games.cli import welcome_user
 
 
@@ -37,10 +38,8 @@ def game_even_odd():
         print(f'Try again, {name}')
 
 
-
 def main():
     game_even_odd()
-
 
 
 if __name__ == '__main__':

@@ -1,5 +1,6 @@
-from brain_games.cli import welcome_user
 from random import randint
+
+from brain_games.cli import welcome_user
 
 
 def brain_gcd():
@@ -21,12 +22,12 @@ def brain_gcd():
             counts += 1
             print('Correct!')
         else:
-            print(f"{your_answer} is wrong answer ;(. Correct answer was {right_answer}.")
+            print(f"{your_answer} is wrong answer ;(."
+                  f" Correct answer was {right_answer}.")
             print(f"Let's try again, {name}!")
             break
     if counts == 3:
         print(f'Congratulations, {name}!')
-
 
 
 def main():
